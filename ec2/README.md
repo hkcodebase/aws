@@ -1,4 +1,4 @@
-# EC2
+# EC2 - Elastic Cloud Compute
 
 ## [EC2 Basics](https://aws.amazon.com/ec2/)
 ## [EC2 instance types](https://aws.amazon.com/ec2/instance-types/)
