@@ -1,5 +1,5 @@
 # AWS Topics
 
-### [EC2](./ec2/README.md) 
+#### [EC2 - Elastic Cloud Compute](./ec2/README.md) 
 
-### [EBS](./ebs/README.md)
+#### [EBS - Elastic Block Store](./ebs/README.md)
