@@ -7,3 +7,10 @@
 
 ## [AMI - Amazon Machine Image](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)
 ![](./ami.png)
+
+- AMI are image of an EC2 Instance at a point of time contains software, configuration or packages
+
+## EC2 can be launched via - 
+  - AWS Provided AMI
+  - User AMI
+  - AWS Marketplace AMI 
