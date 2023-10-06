@@ -29,8 +29,10 @@
     - A single EC2 Instance can have multiple EBS Volumes and one of them will be root volume
     - EBS Volume can be deleted on EC2 instance termination by selecting attribute delete on termination.
     - Root EBS volume by default is selected to delete on ec2 instance termination.
+    - EBS Volumes are network drives with good but limited performance and can be retained once ec2 instance is terminated
+    - EBS Volumes are of 6 types and which one to use depends on use case.
+    - Consider these while selecting EBS [Volume type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html) - size, throughput and IOPS (I/O operations per second)
     
-    ** EBS Volumes are network drives with good but limited performance and can be retained once ec2 instance is terminated
 
     #### EBS Snapshots
     - Snapshots are backup of your EBS volumes at a point of time
@@ -42,6 +44,7 @@
 
     - Instance store provides high performance(better I/O performance)
     - Instance store is lost once ec2 instance is terminated    
- 
+    - Instance Storage are good for cache/buffer/in-memory data, for long term store use EBS
+
     
 
