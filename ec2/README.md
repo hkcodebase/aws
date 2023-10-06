@@ -14,3 +14,6 @@
   - AWS Provided AMI
   - User AMI
   - AWS Marketplace AMI 
+
+## AMI Create Option
+![](./ami_create_option.png)
