@@ -46,5 +46,7 @@
     - Instance store is lost once ec2 instance is terminated    
     - Instance Storage are good for cache/buffer/in-memory data, for long term store use EBS
 
+- [EFS - Elastic File System](https://aws.amazon.com/efs/)
+
     
 
