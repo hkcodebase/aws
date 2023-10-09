@@ -47,6 +47,6 @@
     - Instance Storage are good for cache/buffer/in-memory data, for long term store use EBS
 
 - [EFS - Elastic File System](https://aws.amazon.com/efs/)
-
-    
+   - EFS can be used by EC2 instances distributes across AZs
+   - EFS can be used for big content files, videos, images etc.
 
