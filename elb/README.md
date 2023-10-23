@@ -25,3 +25,5 @@
 - based on url path -> ex:  mydomain.com/resource1 & mydomain.com/resource2
 - based on hostname in url -> ex: mydomain1/com & mydomain2.com
 - based on querystring, headers -> ex: mydomain.com?id=1 & mydomain.com?id=2
+
+[ALB Hands on Article Medium](https://hkcodeblogs.medium.com/scaling-with-aws-1-application-load-balancer-alb-b9ea2edb5f46)
