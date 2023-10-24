@@ -27,3 +27,8 @@
 - based on querystring, headers -> ex: mydomain.com?id=1 & mydomain.com?id=2
 
 [ALB Hands on Article Medium](https://hkcodeblogs.medium.com/scaling-with-aws-1-application-load-balancer-alb-b9ea2edb5f46)
+
+## NLB - Network Load Balancer
+- Operates at Layer 4 (Transport Layer)
+- Used for extreme performance (handle millions of requests per second)
+- Forward/Handles TCP/UDP traffic to your instances
