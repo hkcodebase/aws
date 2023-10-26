@@ -50,3 +50,7 @@
 
     - ![sticky session](./sticky-sesion-1.png)
     - ![](./sticky-session-2.png)
+
+## Cross Zone Load Balancing
+- Data is distributed evenly by combining all instances over multiple availability zones
+![](./cross-zone-load-balancing.png)
