@@ -37,3 +37,5 @@
 - Operates at Layer 3 (Network Layer) - IP Packets
 - Single Entry/Exit for all traffic
 - Can implement Firewalls, intrusion detection, deep packet inspection, payload manipulation etc.
+- Perform functions of Gateway and Load Balancer
+- uses GENEVE protocol at port 6081
