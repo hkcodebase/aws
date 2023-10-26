@@ -39,3 +39,14 @@
 - Can implement Firewalls, intrusion detection, deep packet inspection, payload manipulation etc.
 - Perform functions of Gateway and Load Balancer
 - uses GENEVE protocol at port 6081
+
+
+## Sticky Session 
+- Can be implemented using any type of load balancer mentioned above.
+- It is same client is always redirected to same instance
+- Cookie (with expiration control) is used for this purpose
+- Can be Application based cookie (custom or load balancer generated) or Duration based cookie
+- Below images explain how to implement sticky session in AWS
+
+    - ![sticky session](./sticky-sesion-1.png)
+    - ![](./sticky-session-2.png)
