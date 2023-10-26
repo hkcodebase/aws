@@ -32,3 +32,8 @@
 - Operates at Layer 4 (Transport Layer)
 - Used for extreme performance (handle millions of requests per second)
 - Forward/Handles TCP/UDP traffic to your instances
+
+## GWLB - Gateway Load Balancer
+- Operates at Layer 3 (Network Layer) - IP Packets
+- Single Entry/Exit for all traffic
+- Can implement Firewalls, intrusion detection, deep packet inspection, payload manipulation etc.
