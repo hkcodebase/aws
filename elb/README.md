@@ -42,8 +42,8 @@
 
 
 ## Sticky Session 
+- Ensures that client is always redirected to same instance
 - Can be implemented using any type of load balancer mentioned above.
-- It is same client is always redirected to same instance
 - Cookie (with expiration control) is used for this purpose
 - Can be Application based cookie (custom or load balancer generated) or Duration based cookie
 - Below images explain how to implement sticky session in AWS
