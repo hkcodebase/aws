@@ -59,3 +59,24 @@
 - Auto scale EC2 instances based on Load
 - New instances can be launched automatically using launch template by ASG
 - https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html
+
+
+##
+## Some Points
+- When using an Application Load Balancer to distribute traffic to your EC2 instances, the IP address you'll receive requests from will be the ALB's private IP addresses. To get the client's IP address, ALB adds an additional header called X-Forwarded-For contains the client's IP address.
+
+- When you enable ELB Health Checks, your ELB won't send traffic to unhealthy (crashed) EC2 instances.
+
+- Network Load Balancer provides the highest performance and lowest latency if your application needs it.
+
+- ALBs can route traffic to different Target Groups based on URL Path, Hostname, HTTP Headers, and Query Strings.
+
+- Network Load Balancer has one static IP address per AZ and you can attach an Elastic IP address to it. Application Load Balancers and Classic Load Balancers as a static DNS name.
+
+- The following cookie names are reserved by the ELB (AWSALB, AWSALBAPP, AWSALBTG).
+
+- Server Name Indication (SNI) : SNI in Application Load Balancers and Network Load Balancers allows you to load multiple SSL certificates on one listener
+
+- Server Name Indication (SNI) allows you to expose multiple HTTPS applications each with its own SSL certificate on the same listener. Read more here: https://aws.amazon.com/blogs/aws/new-application-load-balancer-sni/
+
+- For each Auto Scaling Group, there's a Cooldown Period after each scaling activity. In this period, the ASG doesn't launch or terminate EC2 instances. This gives time to metrics to stabilize. The default value for the Cooldown Period is 300 seconds (5 minutes).
