@@ -54,3 +54,8 @@
 ## Cross Zone Load Balancing
 - Data is distributed evenly by combining all instances over multiple availability zones
 ![](./cross-zone-load-balancing.png)
+
+## ASG - Auto Scaling Group
+- Auto scale EC2 instances based on Load
+- New instances can be launched automatically using launch template by ASG
+- https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html
