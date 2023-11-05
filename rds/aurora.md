@@ -43,3 +43,10 @@ Shared storage volume provides Replication + Self healing + Auto Expanding
 - Security Groups - control network access to your RDS/Aurora DB
 - No SSH Available except on RDS Custom
 - Audit logs can be enabled and sent to cloudwatch logs for longer retention
+
+## AWS RDS Proxy
+- This is fully managed database proxy service
+- Allows apps to pool and share db connections
+- Serverless, autoscaling, highly available(multi AZ)
+- Enforce IAM Authentication for DB and store secrets in AWS Secrets Manager
+- RDS proxy is never publicly accessible(must be accessed from VPC)
