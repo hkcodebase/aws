@@ -6,3 +6,4 @@
 #### [AWS Aurora - Managed DB Service](./rds/aurora.md)
 #### [ElastiCache](./rds/elasticache.md)
 #### [VPC](vpc.md)
+#### [Amazon S3 - Simple Storage Service](./s3/s3.md)
