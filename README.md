@@ -4,11 +4,12 @@
 #### [ELB - Elastic Load Balancing](./elb/README.md)
 #### [RDS - Relational Database Service](./rds/README.md)
 #### [AWS Aurora - Managed DB Service](./rds/aurora.md)
-#### [ElastiCache](./rds/elasticache.md)
-#### [VPC](./misc/vpc.md)
+#### [ElastiCache - Cache](./rds/elasticache.md)
+#### [VPC - Virtual Private Cloud](./misc/vpc.md)
 #### [Amazon S3 - Simple Storage Service](./s3/s3.md)
 #### [AWS CLI - Command Line Interface](./misc/cli.md)
-#### [CloudFront](./misc/cloudfront.md)
+#### [CloudFront - CDN of AWS](./misc/cloudfront.md)
+#### [CloudFormation - Infrastructure as code](.misc/cloudformation.md)
 
 
 ## Medium Articles 
