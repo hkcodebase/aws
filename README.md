@@ -9,7 +9,7 @@
 #### [Amazon S3 - Simple Storage Service](./s3/s3.md)
 #### [AWS CLI - Command Line Interface](./misc/cli.md)
 #### [CloudFront - CDN of AWS](./misc/cloudfront.md)
-#### [CloudFormation - Infrastructure as code](.misc/cloudformation.md)
+#### [CloudFormation - Infrastructure as code](./misc/cloudformation.md)
 
 
 ## Medium Articles 
