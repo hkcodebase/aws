@@ -61,7 +61,7 @@
     - Mappings are fixed values inside your CloudFormation Template
     - All values are harcoded within Template
     - Format
-    ```
+    ```yaml
     Mappings:
       Mapping01:
         key01:
@@ -70,7 +70,7 @@
           Name: value02
     ```
     - Example 
-    ```
+    ```yaml
     Mappings:
       RegionMap:
         us-east-1:
@@ -88,3 +88,75 @@
     - Outputs can be viewed using AWS Console or AWS CLI
     - Best way to perform collaboration cross stack, so you can let experts handle their own part of stack
     - Stack can't be deleted if output is referenced by another stack
+    - Can be exported using Export block :
+    ```yaml
+    Outputs:
+      SSHSecurityGroup:
+        Description: Custom Group for EC2 SSH
+        Value: !Ref BaseSSHSecurityGroup
+        Export:
+          Name: OutputSSHSecurityGroup
+    ```
+    - Can be imported using function Fn::ImportValue :
+    ```yaml
+    Resources:
+      MyEC2Instance1:
+        Type: AWS::EC2::Instance
+        Properties:
+          AvailabilityZone: us-east-1a
+          ImageId: ami-a4c7edb2
+          InstanceType: t2.micro
+        SecurityGroups:
+          - !ImportValue OutputSSHSecurityGroup
+    ```
+  - __Condition__
+    - Conditions are used to control the creation of resources or outputs based on a condition
+    - Each condition can reference another condition, parameter value or mapping
+    - Conditions can be defined as -
+    ```yaml
+    Conditions:
+      CreateProdResources: !Equals [ !Ref EnvType, PROD ]
+    ```
+    - Functions can be 
+      - Fn::And
+      - Fn::Equals
+      - Fn::If
+      - Fn::Not
+      - Fn::Or
+    - Conditions can be applied to resources/outputs etc.
+    - Example:
+    ```yaml
+    Resources:
+      MountPoint:
+        Type: "AWS::EC2::VolumeAttachment"
+        Condition: CreateProdResources
+    ```
+  - [__Intrinsic Functions__](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
+    - Fn::Ref (!Ref) -> Function used to reference
+      - Parameters -> returns the value of parameter
+      - Resources -> return the id of resources
+      - [Example](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html)
+    - Fn::GetAtt
+      - know the attributes of your resources
+      - [Example](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html)
+      - 
+      ```yaml
+      Format:
+
+      !GetAtt <resourceName>.<attribute>
+      
+      Example:
+      
+      !GetAtt MyEc2Instance1.AvailabilityZone
+      ```
+    - Fn::FindInMap
+      - Find Value from Mappings (used above)
+
+## [CloudFormation Rollbacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stack-failure-options.html)
+  - We can decide rollback strategy based on these available options
+  ![](stack-rollback-options.png)
+
+## CloudFormation Stack Notification
+  - Send Stack Events to SNS Topic 
+  ![](stack-notif-sns.png)
+## [Best Practices](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html) 
