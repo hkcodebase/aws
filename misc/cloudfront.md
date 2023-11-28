@@ -19,6 +19,15 @@
 
 ## CloudFront Caching 
 - Cache lives at CloudFront Edge Location
-- Object is identified in cache using Cache Key
+- Object is identified in cache using unique Identifier => Cache Key
+- Cache Key = hostname + resource portion of URL
 - Cache Hit Ratio maximize to minimize requests to origin
-- Cache can be cleared/invalidated using CreateInvalidation API 
+- Cache can be cleared/invalidated using __CreateInvalidation__ API 
+
+## CloudFront Caching Policies
+- Cache Based on:
+  - HTTP Headers => None - Whitelist
+  - Cookies => None - Whitelist - Include All-Except - All
+  - Query Strings => None - Whitelist - Include All-Except - All
+- Control TTL ( 0 Seconds to 1 year ), can be set by origin using Cache-Contol header, Expires Header ..etc
+- Create your own or use Predefined Managed Policies
