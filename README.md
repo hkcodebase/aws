@@ -18,3 +18,7 @@
  - [Create Access Keys](https://medium.com/@hkcodeblogs/aws-access-keys-f75f796e8c8)
  - [CLI setup ](https://medium.com/@hkcodeblogs/aws-cli-connect-to-aws-using-command-line-41925af062bd)
  - [Application Load Balancer](https://medium.com/@hkcodeblogs/scaling-with-aws-1-application-load-balancer-alb-b9ea2edb5f46)
+
+ ## Reference setup in this repo
+  - [Cloud Resume Setup](./s3/cloud-resume.md)
+  - [Query Cloudwatch logs using Athena](./misc/athena.md)
